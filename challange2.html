@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Accepted</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #ff00a51a;
+        }
+        .container{
+            font-size: 10px;
+            border: 3px solid gray;
+            background-color:bisque;
+            border-radius: 5px;
+        }
+        #col{
+            border: 3px solid rgb(130, 150, 90);
+            margin: 6px 8px;
+            padding: 12px 3px;
+            background-color:#ff00a51a;
+            text-align: center;
+            
+        }
+        .col-1{
+            float: left;
+            width: 32%;
+        }
+        .col-2{
+            float: left;
+            width: 32%;
+
+        }
+        .col-3{
+            float:left;
+            width: 32%;
+        }
+        h3,p{
+            text-align: center;
+        }
+        .col-4{
+            float: right;
+            width: 100%;
+        }
+    
+        @media all and (min-width:807px) and (max-width:1208px){
+            .col-1,.col-2{
+                width: 48%;
+                float: left;
+            }
+            .col-3,.col-4{
+                width: 98%;
+                float: left;
+            }
+        }
+        @media all and (max-width:411px) and (min-width:326px){
+            .col-1,.col-2{
+                float: left;
+                width: 45%;
+            }
+            .col-3,.col-4{
+                float: left;
+                width: 45%;
+            }
+        }
+        @media all and (min-width:280px) and (max-width:324px){
+            .col-2,.col-3{
+                float:left;
+                width: 44%;
+            }
+            .col-1,.col-4{
+                float: left;
+                width: 44%;
+            }
+            h3{
+                width: 88%;
+                margin: 0 20px 0 20px 0;
+            }
+        } 
+        @media all and (min-width:412px) and (max-width:803px){
+            .col-1,.col-2,.col-3{
+                width: 98%;
+                clear: both;
+            }
+            .col-4{
+                width: 98%;
+                float: left;
+            }
+        } 
+        @media all and (min-width:804px) and (max-width:806px){
+            .col-1,.col-2{
+                width: 47.8%;
+                float: left;
+                border-radius: 5px;
+            }
+            .col-3,.col-4{
+                border-radius: 5px;
+                clear: both;
+                width: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h3 class="head">Study Point </h3>
+            <div id="col" class="col-1">Paper 1
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta debitis minus repudiandae consequatur harum nobis reprehenderit excepturi provident consectetur expedita!</p>
+            </div>
+            <div id="col" class="col-2" >Paper 2 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta debitis minus repudiandae consequatur harum nobis reprehenderit excepturi provident consectetur expedita!</p>
+            </div>
+            <div id="col" class="col-3">paper 3<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta debitis minus repudiandae consequatur harum nobis reprehenderit excepturi provident consectetur expedita!</p>
+            </div>
+            <div id="col" class="col-4">Paper 4<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta debitis minus repudiandae consequatur harum nobis reprehenderit excepturi provident consectetur expedita!</p>
+            </div>
+    </div>    
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header h1{
+            font-size: 60px;
+            text-align: center;
+            color: brown;
+            
+        }
+        header{
+            background-image: url("hacker.jpg");
+            padding: 60px;
+        }
+        nav {
+            background-color:#333;
+            overflow: hidden;
+            position: sticky;
+            top: 1px;
+        }
+        nav a{
+            color:white;
+            padding: 20px;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            
+        }
+        footer{
+            padding: 10px;
+            background-color:#333;
+            clear: left;
+        }
+        a:hover{
+            color:brown;
+        }
+        #im,#sher,#larry,#elon,#jaff{
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+        }
+        #im{
+            float:left;
+            padding: 10px;
+        }
+        #sher{
+            float: left;
+            padding: 15px;
+            width: 150px;
+            height: 170px;
+        
+        }
+        #larry{
+            float: left;
+            padding: 15px;
+            width: 170px;
+            height: 170px;
+        }
+        #elon{
+            float: left;
+            padding: 15px;
+            width: 150px;
+            height: 160px;
+        }
+        #jaff{
+            float: left;
+            padding: 15px;
+            width: 150px;
+            height: 160px;
+        }
+        h2{
+            font-size: 35px;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            color:teal;
+        }
+        p{ 
+            font-size: 20px;
+            font-weight: bold;
+        }
+        section{
+            margin: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bussiness Leaders</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Leaders</a>
+        <a href="#">Bussiness</a>
+        <a href="#">Read About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Reed Hasting</h2>
+            <p id="p-1"> <img id="im" src="hasting.jfif" alt="">  Reed Hastings is an American entrepreneur best known for being the co-founder, chairman and CEO of Netflix.
+                 He also serves on a number of boards and non-profit organizations and is also
+                  a former member of the California State Board of Education. </p>
+            <p>Reed Hastings and Marc Randolph co-founded Netflix in 1997, initially offering flat rate movie rental-by-mail to customers in the United States. Serving as CEO, Hastings helped beat off competition from Blockbuster and Walmart and ultimately transformed the world of movies, TV and cable. In the process</p>
+        </section>
+        <br>
+        <section>
+            <h2>Sheryl Sandburg</h2>
+            <p id="p2"> <img id="sher" src="sheryl1.jfif" alt=""> Sheryl Sandberg’s ascent in the business world and subsequent meteoric rise onto the scene of the business world’s social consciousness,<br> Sandberg’s unmatched combination of skill, power,<br> and influence started a universal movement simply asking that everyone wake up and Lean In.</p>
+            <p>In March 2008, Sandberg joined Facebook as the company’s chief operating officer. From her COO post, Sandberg oversees Facebook’s business operations, specifically helping Facebook scale its operations and expand its global footprint. She also oversees sales management, business development.</p>
+        </section>
+        <br>
+        <section>
+            <h2>Larry Page</h2>
+            <p id="p3"> <img id="larry" src="larry.jfif" alt=""> Larry Page – A leader with great leadership skills. Introduction to Larry Page and Google Larry (Lawrence) Page, born on the 26 th March 1973 in Michigan, is the current CEO of Google Incorporation. He received Bachelor of Science in Computer Engineering from Michigan University and Master of Science in Computer Science from Stanford University.</p>
+        </section>
+        <section>
+            <br>
+            <br>
+            <h2>Elon Musk</h2>
+            <p id="p4"> <img id="elon" src="elon.jfif" alt=""> Elon Musk is an American businessman. He is the co-founder of PayPal, CEO and CTO of SpaceX, and CEO and product architect at Tesla Motors (Cole, 2021). He has used his skills to aid in the design of electric cars and even spaceships.</p>
+            <p>Tesla, Inc.—originally Tesla Motors—was incorporated in July 2003 by Martin Eberhard and Marc Tarpenning, who financed the company until the Series A round of funding.[82] Both men played active roles in the company's early development prior to Musk's involvement.[83] Musk led the Series A round of investment in 2004</p>
+        </section>
+        <section>
+            <h2>Jaff Bezos</h2>
+            <p id="p5"><img id="jaff" src="beroz.jfif" alt=""> Jeff Bezos is one of the founding fathers of e-commerce, and part of a select group of entrepreneurs in that field who managed to survive the dot-com bubble without losing control of their companies. Today, his business, Amazon.com, is an Internet goliath that sells everything from books to laptops to gift baskets. Most recently, the company has acquired Zappos, the online shoe retailer, and unveiled the Kindle, the first e-reader to become a breakout hit. This risky move into consumer electronics shows that Jeff Bezos, having pioneered</p>
+        </section>
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy;2021 | Exampur</a>
+    </footer>
+
+    
+</body>
+</html>

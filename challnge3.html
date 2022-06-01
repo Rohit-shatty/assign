@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+
+        .container,.box{
+            border-radius: 10px;
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+ 
+        }
+        body{
+        
+            border-radius: 10px;
+            background: bisque;
+            
+        
+        }
+        .head{
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration:underline;
+            text-underline-offset: 5px;
+        }
+        .box{
+            background: lightsalmon;
+            padding: 20px;
+            margin: 10px 0px 20px 10px;
+        
+            
+            
+        }
+        img{
+            width: 80px;
+            height: 88px;
+            margin: 5px 10px;
+            float: left;
+            border-radius: 4px;
+            border: 3px solid lightgray;
+        }
+        #mg{
+            float: right;
+        }
+        #ms{
+            
+            float: right;
+        }
+        @media all and (min-width:950px) and (max-width:1300px){
+            .box{
+                
+                padding-bottom: 35px;
+            }
+        }
+        @media all and (min-width:1301px) and (max-width:1382px){
+            .box{
+                padding-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="head">Float Property</h2>
+        <div class="box box-1"><img id="ig" src="user.png" alt=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime dolorem distinctio amet, quisquam soluta perspiciatis esse itaque incidunt ex sunt aut qui aperiam? Tempore inventore sequi dolorum perspiciatis optio!</p></div>
+        <div class="box box-2"><img id="mg" src="email.png" alt="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, recusandae ex ut vero dignissimos labore sapiente laborum distinctio aperiam. Velit? cupiditate! ipsum dolor, sit amet consectetur adipisicing elit.
+             Molestias earum quibusdam vel officiis. Autem soluta consequuntur quidem, maxime necessitatibus assumenda.</p></div>
+        <div class="box box-3"><img id="sg" src="gmail.png" alt=""><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos atque, veritatis, totam vitae commodi necessitatibus quas repellendus repellat nemo quis quam tempora id incidunt deserunt perspiciatis eum culpa amet sit.</p></div>
+        <div class="box box-4"><img id="ms" src="msg.png" alt=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam id facilis voluptate, optio tempore nulla quia soluta architecto dignissimos omnis accusamus quas cupiditate nemo ducimus perspiciatis debitis animi ullam.</p></div>
+    </div>
+    
+</body>
+</html>

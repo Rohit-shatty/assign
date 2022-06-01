@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid challange</title>
+    <style>
+        /*This ia an main class for apllying css*/
+        .container{
+            height: 100%;
+            text-align: center;
+            display: grid;
+            grid-gap:5px;
+            grid-template-columns: repeat(6,3fr);
+        }
+        .item{
+            padding: 10px;
+            color: whitesmoke;
+            background-color: brown;
+            border: 3px solid whitesmoke;
+        }
+        /*this is an nested class which is inside the container class*/
+        .nested{
+            display: grid;
+            gap: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--the main class will starts from here -->
+    <div class="container">
+        <!--we made nested cls for each columns as u can see in web page and this html code-->
+        <div class="nested">
+            <div class="item">item-1</div>
+        </div>
+        <div class="nested">
+            <div class="item">item-2</div>
+            <div class="item" id="box3">item-3</div>    
+        </div>
+        <div class="nested">
+            <div class="item" id="box4">item-4</div>
+            <div class="item" id="box5">item-5</div>
+            <div class="item" >item-6</div>
+        </div>
+        <div class="nested">
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+            <div class="item">item-10</div>
+        </div>
+        <!--again there was an nested cls whichcontains 6 items class inside itself -->
+        <div class="nested">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+        </div>
+        <!--this is an last column as u can seen in web page which contains 12 items-->
+        <div class="nested">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+            <div class="item">item-10</div>
+            <div class="item">item-11</div>
+            <div class="item">item-12</div>
+        </div>
+    <!-- main cls will ends here-->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*nav>a{
+
+            width: 100%;
+            color: whitesmoke;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            float: left;
+        }
+        nav{
+            margin: 5px -8px;
+            background-color: rgb(83, 78, 78);
+            padding: 10px;
+        }*/
+        /*this is an parent cls for apllying css */
+         div.boxes{
+
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+        }
+        /*this is an child cls of boxesby this cls u can apply the css on all the box*/
+        div.box{
+            
+            width: 300px;
+            display: flex;
+            /*here we direction of all the box*/
+            flex-direction: column;
+            height: 100%;
+            margin: 40px 20px;
+           box-shadow: 5px  b4px 6px 0 gray,0 6px 20px 0 gray;
+        }
+        /*this is an cls only for box-2 in which we are applying css*/  
+        div.box2{
+            margin-top: 70px;
+        }
+        /*here we costumizing image*/
+        div.box img{
+            width: 100%;
+            height: 200px;
+        
+        }
+        p{
+            font-weight: 550;
+        }
+        h2{ 
+            font-weight: bolder;
+            font-size: 1.6rem;
+            padding-left: 5px;
+        }
+        /*this ishp cls for all h2 and p tags*/
+        #hp{
+            margin: 10px 20px;
+            text-align: left;
+        }
+        a:hover{
+            color: brown;
+        }
+       .box>button{
+            font-size: 20px;
+            padding: 20px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: rgb(65, 61, 61);
+            border: none;
+            margin: 10px 20px;
+
+        }
+        button:hover{
+            color: blue;
+            cursor: pointer;
+            background-color: black;
+        }
+       /* footer{
+            width: 100%;
+            background: #333;
+            padding: 10px;
+            float: left;
+            margin: 0 -8px;
+        }
+        footer>a{
+            color: whitesmoke;
+            padding:10px;
+            text-decoration: none;
+            text-align: center;
+        }*/
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- #main div starts from here which is an 1st row of container-->
+        <div class="boxes">
+            <!--this is an child cls which contains all thing of a single box like img,<p> and h2 tag-->
+            <div class="box1 box">
+                <img src="http://4.bp.blogspot.com/-1llIibfaR-s/UFuqgoOdTKI/AAAAAAAABLw/oijkYbDT0BE/s1600/flowingwater02.jpg" alt="">
+                <h2 id="hp">Seamlessly Visualization</h2>
+                <p id="hp">
+                    here is just something extraordinary about a well-designed visualization. the contours flow throughout
+                </p>                     
+                <!--<a href="www.google.com" target="_blank" rel="noopener noreferrer"><input type="button" value="More Info"> </a>-->    
+                <button>Read More</button>
+            </div>
+            <div class="box2 box">
+                <img src="https://www.regent-holidays.co.uk/upload-files/product-tours-days/DAY-ITN_ICE_054_10622.jpg" alt="">
+                <h2 id="hp">Completely Synergize</h2>
+                <p id="hp">Completely Synergize Dramatically maintain clicks-and-mortar solutions without schemas.</p>
+                <button>Read More</button>
+            </div>
+            <div class="box3 box">
+                <img src="http://soundholder.com/wp-content/uploads/2016/04/WaterStreamCoverClean.jpg" alt="">
+                <h2 id="hp">Dynamically Procrastinate</h2>
+                <p id="hp">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital </p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <!--the 2nd row will starts from here which contains all the 3 box-->        
+        <div class="boxes">
+            <!--this is an 1st box of 2nd row-->
+            <div class="box1 box">
+                <img src="http://ghar360.com/blogs/wp-content/uploads/unique-beautiful-houses-on-home-garden-with-beautiful-homes-design-ideas.jpg" alt="">
+                <h2 id="hp">Seamlessly Visualization</h2>
+                <p id="hp">There is just something extraordinary about a well-designed visualization throughout as well.</p>
+                <button>Read More</button>
+            </div>
+            <!-- # this ia an 2nd box od 2nd row-->
+            <div class="box2 box">
+                <img src="https://www.tesselaarflowers.com.au/wp-content/uploads/2016/05/miracle-garden-house.jpg" alt="">
+                <h2 id="hp">Completely Synergize</h2>
+                <p id="hp">Completely Synergize Dramatically maintain clicks-and-mortar solutions without schemas.</p>
+                <button>Read More</button>
+            </div>
+            <!--
+                this is an 3rd box of 2nd row
+            -->
+            <div class="box3 box">
+                <img src="http://www.thewowstyle.com/wp-content/uploads/2015/07/natural-landscape-purple-lake-wallpaper-.jpg" alt="">
+                <h2 id="hp">Dynamically Procrastinate</h2>
+                <p id="hp">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. bottom line.</p>
+                <button>Read More</button>
+            </div>    
+        </div>
+    <!-- #MAIN cls ends here-->
+    </div>
+</body>
+</html>

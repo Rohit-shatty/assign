@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex property-1</title>
+    <style>
+        .boxes{
+            display: flex;
+            font-weight: bold;
+            
+            
+        }
+        .boxes div{
+            background-color: darkred;
+            flex: 1;
+            margin: 2px;
+            padding: 10px;
+            border-radius: 5px;
+            color: cornsilk;
+        }
+        div.box{
+            display: flex;
+            padding: 0px; 
+            border: 2px cornsilk;
+            
+        }
+        .box>div{
+            flex: 1;
+            background-color: cornsilk;
+            color:darkred ;
+            border-radius: 5px; 
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div>1
+
+            <div class="box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="boxes">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="boxes">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    
+</body>
+</html>

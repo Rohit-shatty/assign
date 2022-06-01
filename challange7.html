@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /*at starting we give margin 0 , font-size and font family fo all classes*/
+            margin: 0 auto;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        /*this is an parent cls in which we used flex display in row direction*/
+        .main{
+            display: flex;
+            flex-direction:row;
+        }
+        /*through this cls we can apply css only on nav cls */
+        .nav{
+            padding: 10px;
+            /*flex-grow is used to expand the cls in given flex-direction*/
+            flex-grow: 0.5;
+            color: whitesmoke;
+            background-color: darkred;
+        }
+        /*nest cls were used only for remaining cls
+*/        .nest{
+            flex-grow: 2;
+        }
+        /*box cls i will used olny for header and footer */
+        .box{
+            /*here we give some height to header & footer */
+            height: 100px;
+            padding: 10px;
+            color: whitesmoke;
+            background-color:teal;
+        }
+        /*we made this id only for gave css to artical box with (some height) */ 
+        #art{
+            padding: 10px;
+            height:560px;
+    </style>
+</head>
+<body>
+    <!--this is a parent cls -->
+    <div class="main">
+        <!--this is an nav cls which contains only (#nav box)-->
+        <div class="nav">
+            Nav
+        </div>
+        <!--this cls sontains all the 3 remaining boxes-->
+        <div class="nest">
+            <!--in box cls we have only (header & footer) that we can easly apply css on it-->
+            <div class="box">Header</div>
+            <!-- #we give id for apllying css particular on (artical box) -->
+            <div id="art">Artical</div>
+            <div class="box">Footer</div>
+        </div>
+    </div>
+    <!-- main cls end here-->    
+</body>
+</html>
